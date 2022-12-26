@@ -21,7 +21,8 @@ def main(a):
     if a%2==1:
         x = x + " odd number"
     if a%2==0:
-        x = x + " even number"
+        if a!=0:
+            x = x + " even number"
     return x
-a = -89
+a = 0
 print(main(a))
