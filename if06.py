@@ -13,4 +13,18 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
-    return
+    if a>0:
+        number = 1
+    if a<0:
+        number = 0
+    if b>0:
+        number = number + 1
+    if c>0:
+        number = number + 1
+    return number
+a = -57
+b = 98
+c = 45
+negative = 3 - main(a, b, c)
+print("There are",main(a, b, c), "positive numbers")
+print("There are", negative, "negative numbers")
