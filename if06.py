@@ -13,6 +13,7 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
+
     if a>0:
         number = 1
     if a<0:
@@ -21,10 +22,13 @@ def main(a,b,c):
         number = number + 1
     if c>0:
         number = number + 1
-    return number
+    negative = 3 - number
+    if number>negative:
+        answer = "there are a lot of positive numbers"
+    if number<negative:
+        answer = "there are a lot of negative numbers"
+    return answer
 a = -57
 b = 98
 c = 45
-negative = 3 - main(a, b, c)
-print("There are",main(a, b, c), "positive numbers")
-print("There are", negative, "negative numbers")
+print(main(a, b, c))
