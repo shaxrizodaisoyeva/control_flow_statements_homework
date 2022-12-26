@@ -10,6 +10,8 @@ def main(a,b,c):
     """
     if a>0:
         number = 1
+    if a<0:
+        number = 0
     if b>0:
         number = number + 1
     if c>0:
