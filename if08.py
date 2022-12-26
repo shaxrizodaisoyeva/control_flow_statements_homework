@@ -14,7 +14,8 @@ def main(a):
     if -10< a//10 <10:
         x = "two-digit"
     if -10< a//100 <10:
-        x = "three-digit"
+        if -1> a//100 >1:
+            x = "three-digit"
     if a%2==1:
         x = x + " odd number"
     if a%2==0:
