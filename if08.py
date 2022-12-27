@@ -11,15 +11,15 @@ def main(a):
     Returns:
         string: the message to print
     """
-    if -10< a//10 <10:
+    x = ""
+    if a>9 and a<100:
         x = "two-digit"
-    if -10< a//100 <10:
-        if -1> a//100 >1:
-            x = "three-digit"
+    if a>99 and a<1000:
+        x = "three-digit"
     if a%2==1:
         x = x + " odd number"
     if a%2==0:
         x = x + " even number"
     return x
-a =70
+a =7000
 print(main(a))
